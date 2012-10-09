@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 상단 네비게이션 바 레이아웃 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_navi3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/navi_padding"
+        android:paddingRight="@dimen/navi_padding" >
+
+        <ImageButton
+            android:id="@+id/navibar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_back"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_back" />
+
+        <TextView
+            android:id="@+id/navibar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/navibar_func"
+            android:layout_toRightOf="@+id/navibar_back"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title_medium"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/navibar_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/navibar_func"
+            android:layout_toRightOf="@+id/navibar_back"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/navibar_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxWidth="100dp"
+                android:singleLine="true"
+                android:text="@string/menu_settings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_title_small" />
+
+            <ImageView
+                android:id="@+id/navibar_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/navi_padding"
+                android:layout_marginRight="@dimen/navi_padding"
+                android:contentDescription="@string/contentdesc_navigation_divider"
+                android:scaleType="fitXY"
+                android:src="@drawable/bar_divider" />
+
+            <TextView
+                android:id="@+id/navibar_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxWidth="150dp"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_title_small" />
+
+            <ImageView
+                android:id="@+id/navibar_arrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:contentDescription="@string/contentdesc_navigation_ex"
+                android:scaleType="fitXY"
+                android:src="@drawable/navigation_expand" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/navibar_func"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_search"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_action_search" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/navibar_underline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navi_underline"
+        android:background="@color/gray" />
+
+</LinearLayout>

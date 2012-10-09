@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 메인화면 레이아웃 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:seoul="http://schemas.android.com/apk/res/com.aincc.seoulexcursion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/contentdesc_topline"
+        android:scaleType="fitXY"
+        android:src="@drawable/colorline" />
+
+    <com.aincc.seoulexcursion.ui.widget.Navibar
+        android:id="@+id/navibar"
+        seoul:style="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topline" />
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navibar" >
+
+        <include
+            android:id="@+id/facilinfo_layout_ref"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/include_facilinfo_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

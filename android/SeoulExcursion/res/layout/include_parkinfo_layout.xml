@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parkinfo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/media_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:visibility="gone" >
+
+                <include
+                    android:id="@+id/imgFrame_ref"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="4dp"
+                    layout="@layout/include_image_frame" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/padding_small"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/P_ADDR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_large"
+                android:text="@string/park_addr"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/P_DIVISION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/park_division"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/P_ADMINTEL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/park_phone"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/padding_small"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <TextView
+                android:id="@+id/P_LIST_CONTENT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_press"
+        android:padding="@dimen/padding_medium" >
+
+        <ImageButton
+            android:id="@+id/mediaToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_picture"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_picture" />
+
+        <ImageButton
+            android:id="@+id/programlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_toRightOf="@+id/mediaToggle"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_action_locate"
+            android:scaleType="fitXY"
+            android:src="@drawable/collections_program" />
+
+        <ImageButton
+            android:id="@+id/callphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_toRightOf="@+id/programlist"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_action_locate"
+            android:scaleType="fitXY"
+            android:src="@drawable/device_access_call" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_large"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_cancel"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_cancel" />
+
+        <TextView
+            android:id="@+id/programbadge"
+            android:layout_width="@dimen/badge_size"
+            android:layout_height="@dimen/badge_size"
+            android:layout_marginLeft="-16dp"
+            android:layout_toRightOf="@+id/programlist"
+            android:background="@drawable/badge2"
+            android:gravity="center"
+            android:paddingBottom="1dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/badge_font_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

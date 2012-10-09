@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playinfo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/media_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:visibility="gone" >
+
+                <include
+                    android:id="@+id/imgFrame_ref"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_margin="4dp"
+                    layout="@layout/include_image_frame" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/padding_small"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_large"
+                android:text="@string/play_title"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/DATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_date"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/TIME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_time"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/PLACE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_place"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/USE_TRGT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_use_trgt"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/USE_FEE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_use_fee"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/AGELIMIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_agelimit"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/TICKET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_ticket"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/PLAYER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_player"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/SPONSOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_sponsor"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/SUPPORT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_support"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/INQUIRY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_inquiry"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/padding_small"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <TextView
+                android:id="@+id/PROGRAM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/CONTENTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/ORG_LINK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_org_link"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/HOMEPAGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_homepage"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/ETC_DESC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_etc_desc"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/RGSTDATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_rgstdate"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/MDFYDATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/play_mdfydate"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_press"
+        android:padding="@dimen/padding_medium" >
+
+        <ImageButton
+            android:id="@+id/mediaToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_picture"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_picture" />
+
+        <ImageButton
+            android:id="@+id/callphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_toRightOf="@+id/mediaToggle"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_action_locate"
+            android:scaleType="fitXY"
+            android:src="@drawable/device_access_call" />
+
+        <ImageButton
+            android:id="@+id/orglink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_toRightOf="@+id/callphone"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_lang"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_lang" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_large"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_cancel"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_cancel" />
+    </RelativeLayout>
+
+</RelativeLayout>

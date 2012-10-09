@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parkinfo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_medium" >
+
+    <LinearLayout
+        android:id="@+id/navi_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar_navi3"
+        android:visibility="invisible" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navi_area"
+        android:layout_above="@+id/under_area"
+        android:background="@drawable/background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/P_NAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_large"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="@string/app_name"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_large"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/padding_small"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <TextView
+                android:id="@+id/P_EDUDAY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/app_name"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/P_PRODAY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/app_name"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/P_EDUTIME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/app_name"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/P_EDUPERSON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/program_person"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/P_EAMAX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/program_max"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/padding_small"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <TextView
+                android:id="@+id/P_LIST_CONTENT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:lineSpacingMultiplier="1.4"
+                android:text="@string/app_name"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignTop="@+id/scrollview"
+        android:background="@color/transparent_press" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/under_area"
+        android:background="@color/transparent_press"
+        android:padding="@dimen/padding_medium" >
+
+        <ImageButton
+            android:id="@+id/callphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_action_locate"
+            android:scaleType="fitXY"
+            android:src="@drawable/device_access_call" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_large"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_cancel"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_cancel" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/under_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bar_navi3"
+        android:visibility="invisible" >
+    </LinearLayout>
+
+</RelativeLayout>

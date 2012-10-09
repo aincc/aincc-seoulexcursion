@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 네비게이션바 -->
+    <declare-styleable name="Navibar">
+        <attr name="style">
+            <flag name="title" value="0x00" /> <!-- 제목만.. -->
+            <flag name="option1" value="0x01" /> <!-- 옵션기능1 -->
+            <flag name="option2" value="0x02" /> <!-- 옵션기능2 -->
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 메인화면 레이아웃 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/padding_large"
+        android:contentDescription="@string/contentdesc_splash_seoullogo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/seoul_main_bg2" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/contentdesc_topline"
+        android:scaleType="fitXY"
+        android:src="@drawable/colorline" />
+
+    <com.aincc.seoulexcursion.ui.widget.Navibar
+        android:id="@+id/navibar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topline" />
+
+    <com.aincc.lib.ui.widget.page.PageIndicator
+        android:id="@+id/pageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/underline"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/contentdesc_haechi_underline"
+        android:scaleType="fitXY"
+        android:src="@drawable/haechi_hor" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@+id/underline"
+        android:paddingBottom="@dimen/padding_large"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_title_large"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

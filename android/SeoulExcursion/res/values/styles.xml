@@ -1,0 +1,29 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="progress_black" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_black</item>
+        <item name="android:minWidth">24dip</item>
+        <item name="android:minHeight">24dip</item>
+        <item name="android:maxWidth">24dip</item>
+        <item name="android:maxHeight">24dip</item>
+    </style>
+
+    <style name="progress_white" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_white</item>
+        <item name="android:minWidth">24dip</item>
+        <item name="android:minHeight">24dip</item>
+        <item name="android:maxWidth">24dip</item>
+        <item name="android:maxHeight">24dip</item>
+    </style>
+
+    <style name="option_dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/push_down_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+    
+    <style name="programinfo_dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+    
+</resources>

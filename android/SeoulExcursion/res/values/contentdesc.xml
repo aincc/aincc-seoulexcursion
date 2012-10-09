@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 이미지뷰의 contentDescription 내용을 등록합니다. -->
+    <string name="contentdesc_navigation_back">뒤로가기 버튼</string>
+    <string name="contentdesc_navigation_accept">확인 버튼</string>
+    <string name="contentdesc_navigation_cancel">취소 버튼</string>
+    <string name="contentdesc_navigation_picture">사진보기 버튼</string>
+    <string name="contentdesc_navigation_divider">분리선</string>
+    <string name="contentdesc_navigation_lang">언어설정 또는 웹사이트</string>
+    <string name="contentdesc_navigation_ex">펼치기/접기 표시</string>
+    <string name="contentdesc_navigation_search">검색 버튼</string>
+    
+    <string name="contentdesc_cell_header">검색 버튼</string>
+    <string name="contentdesc_cell_thumbnail">셀 섬네일 이미지</string>
+    <string name="contentdesc_cell_document">셀 정보 더있음 표시 이미지</string>
+    <string name="contentdesc_cell_arrow">셀 정보 더있음 표시 이미지</string>
+    
+    <string name="contentdesc_badge">배지</string>
+    <string name="contentdesc_popup">팝업</string>
+    
+    <string name="contentdesc_action_locate">내위치 버튼</string>
+    <string name="contentdesc_action_park">현재공원위치 버튼</string>
+    
+    <string name="contentdesc_topline">상단라인 </string>
+    <string name="contentdesc_splash_seoulbrand">서울브랜드</string>
+    <string name="contentdesc_splash_seoullogo">서울로고</string>
+    <string name="contentdesc_haechi_underline">해치</string>
+    
+    <string name="contentdesc_main_park">메인메뉴 공원</string>
+    
+    <string name="contentdesc_traffic_directions">교통정보</string>
+</resources>

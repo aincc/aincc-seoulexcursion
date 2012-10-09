@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background" >
+
+    <!-- debug key android:apiKey="00lCpZRXBKWejsNJ2Y3c3cuhDsFoHe4-hdZXuRQ" -->
+    <!-- release key android:apiKey="00lCpZRXBKWdsc8AhMmVh_dbePV6HfBYvT7eeFQ" -->
+    <com.google.android.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:apiKey="00lCpZRXBKWdsc8AhMmVh_dbePV6HfBYvT7eeFQ"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_press" >
+
+        <ZoomControls
+            android:id="@+id/zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <ImageButton
+            android:id="@+id/mylocate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_action_locate"
+            android:paddingRight="@dimen/padding_medium"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_action_locate" />
+
+        <ImageButton
+            android:id="@+id/parklocate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_action_locate"
+            android:paddingLeft="@dimen/padding_medium"
+            android:scaleType="fitXY"
+            android:src="@drawable/location_place" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 공원 검색유형 -->
+    <string-array name="park_search_type">
+        <item>주소</item>
+        <item>공원</item>
+    </string-array>
+
+    <!-- 문화시설 검색유형 -->
+    <string-array name="facil_search_type">
+        <item>테마</item>
+        <item>주제</item>
+    </string-array>
+    
+    <!-- 공연/문화시설 옵션 대분류 -->
+    <string-array name="plays_option_type">
+        <item>공연</item>
+        <item>문화시설-테마</item>
+        <item>문화시설-주제</item>
+    </string-array>
+
+    <!-- 서울시 법정동 -->
+    <string-array name="seoul_jurisdiction">
+        <item>전체</item>
+        <item>강남구</item>
+        <item>강동구</item>
+        <item>강북구</item>
+        <item>강서구</item>
+        <item>관악구</item>
+        <item>광진구</item>
+        <item>구로구</item>
+        <item>금천구</item>
+        <item>노원구</item>
+        <item>도봉구</item>
+        <item>동대문구</item>
+        <item>동작구</item>
+        <item>마포구</item>
+        <item>서대문구</item>
+        <item>서초구</item>
+        <item>성동구</item>
+        <item>성북구</item>
+        <item>송파구</item>
+        <item>양천구</item>
+        <item>영등포구</item>
+        <item>용산구</item>
+        <item>은평구</item>
+        <item>종로구</item>
+        <item>중구</item>
+        <item>중랑구</item>
+    </string-array>
+
+</resources>

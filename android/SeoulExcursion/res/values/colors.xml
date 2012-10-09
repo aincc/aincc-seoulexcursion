@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="darkgray">#515151</color>
+    <color name="gray">#B0B0B0</color>
+    <color name="lightgray">#D1D1D1</color>
+    <color name="bg">#E9E9E9</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_press">#80000000</color>
+    <color name="list_divider">#877E7E</color>
+    
+</resources>

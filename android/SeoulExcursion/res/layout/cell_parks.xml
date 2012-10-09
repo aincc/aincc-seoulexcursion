@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cellSelector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sel_transparent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cell_header_parks" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/imgFrame_ref"
+            android:layout_width="140dp"
+            android:layout_height="90dp"
+            android:layout_margin="4dp"
+            layout="@layout/include_image_frame" />
+
+        <RelativeLayout
+            android:id="@+id/contentFrame"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/P_PARK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/font_content_medium" />
+
+            <TextView
+                android:id="@+id/P_ZONE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/P_PARK"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/P_ADMINTEL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/P_ZONE"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/app_name"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/font_content_small" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/contentdesc_cell_arrow"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

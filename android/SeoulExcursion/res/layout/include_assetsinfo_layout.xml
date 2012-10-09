@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/assetsinfo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/media_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="4dp"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.aincc.lib.ui.widget.page.PageIndicator
+            android:id="@+id/pageIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/padding_small"
+            android:background="@android:drawable/divider_horizontal_bright" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding_large"
+        android:layout_below="@+id/media_layout" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/CULTASSTK_LABEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_large"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:text="@string/assets_cultasstk"
+                    android:textColor="@color/darkgray"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/font_content_small" />
+                
+                <TextView
+                    android:id="@+id/CULTASSTK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_large"
+                    android:layout_marginRight="@dimen/padding_large"
+                    android:textColor="@color/darkgray"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/font_content_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/CULTASSTH_LABEL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_large"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:text="@string/assets_cultassth"
+                    android:textColor="@color/darkgray"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/font_content_small" />
+
+                <TextView
+                    android:id="@+id/CULTASSTH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_large"
+                    android:layout_marginRight="@dimen/padding_large"
+                    android:textColor="@color/darkgray"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/font_content_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/CLSSCODE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_clss"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/ASSIGNNUM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_assignnum"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/ASSIGNYMD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_assignymd"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/PERIOD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_period"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/padding_small"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <TextView
+                android:id="@+id/CONTENTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/padding_small"
+                android:background="@android:drawable/divider_horizontal_bright" />
+
+            <TextView
+                android:id="@+id/SCALE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_scale"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/MATERIAL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_material"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/CLASSIFY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_classify"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/BINDING"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_binding"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/QUANTITY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_quantity"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/SIZING"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_sizing"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/OWNER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_owner"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/LOCATION"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_location"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/DESIGNER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_designer"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/BUILDER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_builder"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/HOLDER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_holder"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/SUCCESSOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_successor"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/ETC_CLSS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_etc_clss"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <TextView
+                android:id="@+id/ASSIGNETC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_large"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/assets_assignetc"
+                android:textColor="@color/darkgray"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/font_content_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_press"
+        android:padding="@dimen/padding_medium" >
+
+        <ImageButton
+            android:id="@+id/mediaToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_picture"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_picture" />
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_large"
+            android:background="@null"
+            android:contentDescription="@string/contentdesc_navigation_cancel"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_cancel" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cellSelector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sel_transparent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cell_header_plays" />
+
+    <RelativeLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/detailview"
+            android:layout_margin="4dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_content_medium" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toLeftOf="@+id/detailview"
+            android:layout_margin="4dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/font_content_small" />
+
+        <ImageView
+            android:id="@+id/detailview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/contentdesc_cell_arrow"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

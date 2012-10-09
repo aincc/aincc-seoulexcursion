@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 메인화면 레이아웃 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:seoul="http://schemas.android.com/apk/res/com.aincc.seoulexcursion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navibar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/setting_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar_lightgray1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/padding_medium"
+                android:text="@string/setting_cache"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/font_content_medium"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/setting_delete_diskcache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sel_transparent"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large" >
+
+                <TextView
+                    android:id="@+id/setting_delete_diskcache_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_medium"
+                    android:paddingTop="@dimen/padding_medium"
+                    android:text="@string/setting_cache_init"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_content_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/setting_delete_diskcache_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setting_delete_diskcache_title"
+                    android:paddingBottom="@dimen/padding_medium"
+                    android:paddingLeft="@dimen/padding_medium"
+                    android:text="@string/setting_cache_init_desc"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/font_content_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_toggle_diskcache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/sel_transparent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large" >
+
+                <TextView
+                    android:id="@+id/setting_toggle_diskcache_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_medium"
+                    android:paddingTop="@dimen/padding_medium"
+                    android:text="@string/setting_cache_enable"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_content_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/setting_toggle_diskcache_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setting_toggle_diskcache_title"
+                    android:layout_toLeftOf="@+id/setting_toggle_diskcache_check"
+                    android:paddingBottom="@dimen/padding_medium"
+                    android:paddingLeft="@dimen/padding_medium"
+                    android:text="@string/setting_cache_enable_desc"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/font_content_small" />
+
+                <CheckBox
+                    android:id="@+id/setting_toggle_diskcache_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/sel_setting_check"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/setting_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar_lightgray1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/padding_medium"
+                android:text="@string/setting_version"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/font_content_medium"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sel_transparent"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/setting_version_title_20120830"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_medium"
+                    android:paddingTop="@dimen/padding_medium"
+                    android:text="@string/setting_version_title_20120830"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_content_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/setting_version_desc_20120830"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setting_version_title_20120830"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/padding_medium"
+                    android:text="@string/setting_version_desc_20120830"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/font_content_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/setting_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bar_lightgray1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/padding_medium"
+                android:text="@string/setting_intro"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/font_content_medium"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sel_transparent"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:visibility="gone" >
+                
+                <TextView
+                    android:id="@+id/setting_intro_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email"
+                    android:paddingBottom="@dimen/padding_medium"
+                    android:paddingTop="@dimen/padding_medium"
+                    android:text="@string/setting_intro_desc"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_content_small"
+                    android:textStyle="bold|italic"/>
+
+                <TextView
+                    android:id="@+id/setting_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email"
+                    android:layout_below="@+id/setting_intro_desc"
+                    android:paddingBottom="@dimen/padding_medium"
+                    android:paddingTop="@dimen/padding_medium"
+                    android:text="@string/setting_author"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_content_small"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/setting_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setting_author"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/padding_medium"
+                    android:text="@string/setting_report"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/font_content_small"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:drawable/divider_horizontal_bright" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/contentdesc_topline"
+        android:scaleType="fitXY"
+        android:src="@drawable/colorline" />
+
+    <com.aincc.seoulexcursion.ui.widget.Navibar
+        android:id="@+id/navibar"
+        seoul:style="title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topline" />
+
+    <ImageView
+        android:id="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/contentdesc_haechi_underline"
+        android:scaleType="fitXY"
+        android:src="@drawable/haechi_hor" />
+
+</RelativeLayout>
