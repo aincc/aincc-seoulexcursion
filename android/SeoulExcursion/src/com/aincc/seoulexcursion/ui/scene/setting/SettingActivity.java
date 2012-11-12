@@ -17,10 +17,10 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.aincc.lib.cache.BitmapDiskLruCache;
-import com.aincc.lib.common.annotation.InjectView;
-import com.aincc.lib.util.PreferencesUtil;
-import com.aincc.lib.util.Utils;
+import com.aincc.cache.BitmapDiskLruCache;
+import com.aincc.ui.common.annotation.InjectView;
+import com.aincc.util.PreferencesUtil;
+import com.aincc.util.Utils;
 import com.aincc.seoulexcursion.App;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.ui.Constants;

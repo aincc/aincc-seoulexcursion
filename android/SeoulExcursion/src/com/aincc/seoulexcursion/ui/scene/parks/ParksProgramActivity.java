@@ -14,8 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.aincc.lib.common.annotation.InjectView;
-import com.aincc.lib.ui.widget.list.section.AmazingListView;
+import com.aincc.ui.common.annotation.InjectView;
+import com.aincc.ui.widget.list.section.AmazingListView;
 import com.aincc.seoulexcursion.util.Logger;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.ui.Constants;

@@ -6,8 +6,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.widget.TextView;
 
-import com.aincc.lib.common.annotation.InjectView;
-import com.aincc.lib.util.Utils;
+import com.aincc.ui.common.annotation.InjectView;
+import com.aincc.util.Utils;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.ui.SeoulBaseActivity;
 import com.aincc.seoulexcursion.util.SeoulFont;

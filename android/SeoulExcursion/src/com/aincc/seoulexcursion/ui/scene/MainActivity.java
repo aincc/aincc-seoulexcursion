@@ -17,15 +17,15 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.View;
 import android.widget.TextView;
 
-import com.aincc.lib.common.annotation.InjectView;
-import com.aincc.lib.network.common.BaseTrans;
-import com.aincc.lib.network.common.BaseTransEx;
-import com.aincc.lib.network.http.HttpParam;
-import com.aincc.lib.ui.control.ExitBackChecker;
-import com.aincc.lib.ui.widget.page.APagerAdapter.OnPagerClickListener;
-import com.aincc.lib.ui.widget.page.PageIndicator;
-import com.aincc.lib.ui.widget.page.PageIndicator.OnPageClickListener;
-import com.aincc.lib.util.PreferencesUtil;
+import com.aincc.ui.common.annotation.InjectView;
+import com.aincc.network.common.BaseTrans;
+import com.aincc.network.common.BaseTransEx;
+import com.aincc.network.http.HttpParam;
+import com.aincc.ui.control.ExitBackChecker;
+import com.aincc.ui.widget.page.APagerAdapter.OnPagerClickListener;
+import com.aincc.ui.widget.page.PageIndicator;
+import com.aincc.ui.widget.page.PageIndicator.OnPageClickListener;
+import com.aincc.util.PreferencesUtil;
 import com.aincc.seoulexcursion.App;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.ui.Constants;
@@ -52,8 +52,10 @@ import com.aincc.seoulopenapi.openapi.culture.OpenPlayCodeInfo;
  * 
  * 메인 화면 <br>
  * 
+ * v1.3.2 : 문화재 정보 조회 대메뉴 삭제. (서비스 정책 변경으로 인한 임시 블록)
+ * 
  * @author aincc@barusoft.com
- * @version 1.0.0
+ * @version 1.3.2
  * @since 1.0.0
  */
 public class MainActivity extends SeoulBaseActivity
@@ -128,6 +130,17 @@ public class MainActivity extends SeoulBaseActivity
 
 		mappingViews(this);
 		initializeUI();
+
+		// @version 1.3.2 : 알림 팝업
+		// AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		// builder.setMessage(string(R.string.notice_version_1_3_2));
+		// builder.setPositiveButton(string(R.string.alert_btn_confirm), new DialogInterface.OnClickListener()
+		// {
+		// @Override
+		// public void onClick(DialogInterface dialog, int which)
+		// {
+		// }
+		// }).create().show();
 	}
 
 	@Override
@@ -158,15 +171,20 @@ public class MainActivity extends SeoulBaseActivity
 	/**
 	 * 대메뉴 페이저 초기화
 	 * 
-	 * @since 1.0.0
+	 * @since 1.3.2
 	 */
 	private void initializePager()
 	{
+		/*
+		 * @version 1.3.2 : 서울 열린 데이터 Open API 활용 정책 변경으로 인하여
+		 * 문화재 정보 조회 서비스가 종료되어 해당 메뉴의 진입이 불가능하도록 임시로 수정함.
+		 * 해당 서비스의 변경 또는 타 서비스를 해당 메뉴로 추가등은 추후 결정하도록 할 예정임.
+		 */
 		// 대메뉴 항목 설정
 		pages = new ArrayList<MainPagerAdapter.MainPageItem>();
 		pages.add(new MainPageItem(R.layout.main_page, R.id.presentImageView, R.drawable.seoul_park));
 		pages.add(new MainPageItem(R.layout.main_page, R.id.presentImageView, R.drawable.seoul_play));
-		pages.add(new MainPageItem(R.layout.main_page, R.id.presentImageView, R.drawable.seoul_assets));
+		// pages.add(new MainPageItem(R.layout.main_page, R.id.presentImageView, R.drawable.seoul_assets));
 
 		// 페이저 어댑터 설정
 		adapter = new MainPagerAdapter(this, pages);

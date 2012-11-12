@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.aincc.lib.common.MapBaseActivity;
+import com.aincc.ui.common.MapBaseActivity;
 import com.aincc.seoulexcursion.util.Logger;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.ui.scene.setting.SettingActivity;

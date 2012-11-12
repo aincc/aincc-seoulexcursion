@@ -6,9 +6,9 @@ import android.content.Context;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.aincc.lib.ui.widget.page.APagerAdapter;
+import com.aincc.ui.widget.page.APagerAdapter;
 import com.aincc.seoulexcursion.util.Logger;
-import com.aincc.lib.util.Utils;
+import com.aincc.util.Utils;
 
 /**
  * 

@@ -20,11 +20,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.aincc.lib.common.annotation.InjectView;
-import com.aincc.lib.network.common.BaseTrans;
-import com.aincc.lib.network.common.BaseTransEx;
-import com.aincc.lib.network.http.HttpParam;
-import com.aincc.lib.ui.widget.list.section.AmazingListView;
+import com.aincc.ui.common.annotation.InjectView;
+import com.aincc.network.common.BaseTrans;
+import com.aincc.network.common.BaseTransEx;
+import com.aincc.network.http.HttpParam;
+import com.aincc.ui.widget.list.section.AmazingListView;
 import com.aincc.seoulexcursion.util.Logger;
 import com.aincc.seoulexcursion.App;
 import com.aincc.seoulexcursion.R;

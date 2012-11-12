@@ -14,7 +14,7 @@ import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.aincc.lib.util.URLImageParser;
+import com.aincc.util.URLImageParser;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.util.SeoulFont;
 import com.aincc.seoulopenapi.model.ParkProgramInfo;

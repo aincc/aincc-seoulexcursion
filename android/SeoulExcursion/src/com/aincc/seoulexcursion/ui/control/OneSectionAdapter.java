@@ -5,7 +5,7 @@ import java.util.List;
 import android.view.View;
 import android.widget.TextView;
 
-import com.aincc.lib.ui.widget.list.section.AmazingAdapter;
+import com.aincc.ui.widget.list.section.AmazingAdapter;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.util.SeoulFont;
 

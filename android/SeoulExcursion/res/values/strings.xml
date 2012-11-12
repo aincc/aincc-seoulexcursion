@@ -1,5 +1,7 @@
 <resources>
 
+    <string name="notice_version_1_3_2">서울의 문화재 홈페이지의 폐쇄에 따라\n2012년 11월 15일부로 문화재정보 서비스\n일부가 중지되어 문화재 찾기 기능 제공을 중단합니다.</string>
+    
     <string name="setting_version_title_20120830">2012.08.30 : 서울나들이 v1.0</string>
     <string name="setting_version_desc_20120830">• 공원 및 공원 프로그램 목록 조회\n• 공원 지도 표시\n• 공연 및 문화시설 목록 조회\n• 문화재 목록 조회\n• 각 메뉴별 검색 기능</string>
     <string name="app_name">서울나들이</string>

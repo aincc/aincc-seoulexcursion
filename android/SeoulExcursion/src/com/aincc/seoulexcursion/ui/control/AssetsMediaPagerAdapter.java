@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.aincc.lib.cache.ImageLoader;
-import com.aincc.lib.cache.ImageWorker.ImageWorkerAdapter;
-import com.aincc.lib.ui.widget.page.APagerAdapter;
+import com.aincc.cache.ImageLoader;
+import com.aincc.cache.ImageWorker.ImageWorkerAdapter;
+import com.aincc.ui.widget.page.APagerAdapter;
 import com.aincc.seoulexcursion.App;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.util.Logger;

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
-import com.aincc.lib.util.Utils;
+import com.aincc.util.Utils;
 import com.aincc.seoulexcursion.R;
 
 /**

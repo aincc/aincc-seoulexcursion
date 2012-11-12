@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.aincc.lib.common.BaseActivity;
+import com.aincc.ui.common.BaseActivity;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.ui.scene.setting.SettingActivity;
 
