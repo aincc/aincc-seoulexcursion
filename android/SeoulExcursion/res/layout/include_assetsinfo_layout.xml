@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <com.aincc.lib.ui.widget.page.PageIndicator
+        <com.aincc.ui.widget.page.PageIndicator
             android:id="@+id/pageIndicator"
             android:layout_width="match_parent"
             android:layout_height="40dp"

@@ -23,7 +23,7 @@
         android:layout_below="@+id/topline"
         app:style="option2" />
 
-    <com.aincc.lib.ui.widget.list.section.AmazingListView
+    <com.aincc.ui.widget.list.section.AmazingListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

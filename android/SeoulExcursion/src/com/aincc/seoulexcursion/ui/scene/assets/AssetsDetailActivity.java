@@ -23,15 +23,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.aincc.ui.common.annotation.InjectView;
 import com.aincc.network.common.BaseTrans;
 import com.aincc.network.common.BaseTransEx;
 import com.aincc.network.http.HttpParam;
-import com.aincc.ui.anim.Animationz;
-import com.aincc.ui.widget.page.PageIndicator;
-import com.aincc.ui.widget.page.PageIndicator.OnPageClickListener;
-import com.aincc.seoulexcursion.util.Logger;
-import com.aincc.util.Utils;
 import com.aincc.seoulexcursion.App;
 import com.aincc.seoulexcursion.R;
 import com.aincc.seoulexcursion.ui.Constants;
@@ -39,6 +33,7 @@ import com.aincc.seoulexcursion.ui.SeoulBaseActivity;
 import com.aincc.seoulexcursion.ui.control.AssetsMediaPagerAdapter;
 import com.aincc.seoulexcursion.ui.control.AssetsMediaPagerAdapter.MediaPageItem;
 import com.aincc.seoulexcursion.ui.widget.Navibar;
+import com.aincc.seoulexcursion.util.Logger;
 import com.aincc.seoulexcursion.util.SeoulFont;
 import com.aincc.seoulopenapi.LangCode;
 import com.aincc.seoulopenapi.OpenAPI;
@@ -49,6 +44,11 @@ import com.aincc.seoulopenapi.model.AssetsSimpleInfo;
 import com.aincc.seoulopenapi.network.OpenBase;
 import com.aincc.seoulopenapi.openapi.culture.OpenAssetsInfo;
 import com.aincc.seoulopenapi.openapi.culture.OpenAssetsMedia;
+import com.aincc.ui.anim.Animationz;
+import com.aincc.ui.common.annotation.InjectView;
+import com.aincc.ui.widget.page.PageIndicator;
+import com.aincc.ui.widget.page.PageIndicator.OnPageClickListener;
+import com.aincc.util.Utils;
 
 /**
  * 
@@ -57,7 +57,8 @@ import com.aincc.seoulopenapi.openapi.culture.OpenAssetsMedia;
  * 문화재 상세정보 표시<br>
  * 
  * @author aincc@barusoft.com
- * @version 1.0.0
+ * @version 1.3.2 : 서울 열린 데이터 Open API 활용 정책 변경으로 인하여
+ *          문화재 미디어 정보 조회 서비스가 종료되어 해당 메뉴의 진입이 불가능하도록 임시로 수정함.
  * @since 1.0.0
  */
 public class AssetsDetailActivity extends SeoulBaseActivity
@@ -187,6 +188,12 @@ public class AssetsDetailActivity extends SeoulBaseActivity
 		super.initializeUI();
 
 		content_layout.setVisibility(View.GONE);
+
+		/*
+		 * @version 1.3.2 : 서울 열린 데이터 Open API 활용 정책 변경으로 인하여
+		 * 문화재 미디어 정보 조회 서비스가 종료되어 해당 메뉴의 진입이 불가능하도록 임시로 수정함.
+		 */
+		mediaToggle.setVisibility(View.GONE);
 		mediaToggle.setOnClickListener(new OnClickListener()
 		{
 			@Override
